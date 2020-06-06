@@ -24,7 +24,7 @@ public class SwaggerConfiguration implements WebMvcConfigurer {
 	Contact contact = new Contact("Integrated Software Services", "08138601115", "chinonso.ikwueto@isslng.com");
 
 	ApiInfo apiInfo = new ApiInfo("ISSL RIC Module Application Api",
-			"This pages documents ISSL RIC Module Application RESTful Web Service endpoints", "1.0", "Authorized Usage",
+			"This pages documents ISSL RIC Module Application RESTful Web Service endpoints", "2.0", "Authorized Usage",
 			contact, "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0", Collections.emptyList());
 
 	@Bean
@@ -36,9 +36,7 @@ public class SwaggerConfiguration implements WebMvcConfigurer {
 
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
-
 		registry.addMapping("/**").allowedMethods("*").allowedOrigins("*");
-
 	}
 
 //	@Override
